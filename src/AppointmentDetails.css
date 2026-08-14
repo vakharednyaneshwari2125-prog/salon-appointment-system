@@ -1,0 +1,250 @@
+/* Main Page */
+
+.appointment-details-page {
+  min-height: 100vh;
+  background: #f4f6fa;
+
+  padding: 45px 25px;
+
+  box-sizing: border-box;
+}
+
+
+/* White Main Container */
+
+.details-container {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  background: white;
+
+  border-radius: 22px;
+
+  padding: 40px 35px 60px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Heading */
+
+.details-container h1 {
+  text-align: center;
+
+  font-size: 48px;
+
+  color: #0d1b2a;
+
+  margin: 0 0 35px;
+
+  font-weight: 600;
+}
+
+
+/* Search Box */
+
+.search-box {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: stretch;
+
+  margin-bottom: 36px;
+}
+
+
+/* Search Input */
+
+.search-box input {
+  width: 310px;
+
+  height: 56px;
+
+  padding: 0 18px;
+
+  font-size: 22px;
+
+  border: 1px solid #d6dce5;
+
+  border-radius: 8px 0 0 8px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+
+.search-box input:focus {
+  border-color: #1769ff;
+}
+
+
+/* Search Button */
+
+.search-box button {
+  height: 56px;
+
+  padding: 0 25px;
+
+  border: none;
+
+  background: #1769ff;
+
+  color: white;
+
+  font-size: 22px;
+
+  border-radius: 0 8px 8px 0;
+
+  cursor: pointer;
+}
+
+
+.search-box button:hover {
+  background: #0958dc;
+}
+
+
+/* Appointment Table */
+
+.appointment-table {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+/* Table Header */
+
+.table-header {
+  min-width: 850px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+  background: #212529;
+
+  color: white;
+
+  font-size: 23px;
+
+  font-weight: 600;
+
+  padding: 18px 20px;
+
+  box-sizing: border-box;
+}
+
+
+.table-header div {
+  text-align: center;
+}
+
+
+/* Table Row */
+
+.table-row {
+  min-width: 850px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+  padding: 20px;
+
+  border-bottom: 1px solid #d9dfe7;
+
+  font-size: 19px;
+
+  color: #111;
+
+  box-sizing: border-box;
+
+  align-items: center;
+}
+
+
+.table-row div {
+  text-align: center;
+}
+
+
+/* Booked Status */
+
+.table-row .status {
+  color: #198754;
+
+  font-weight: 600;
+}
+
+
+/* No Appointment */
+
+.no-appointment {
+  min-width: 850px;
+
+  text-align: center;
+
+  padding: 20px;
+
+  font-size: 22px;
+
+  color: #111;
+
+  border-bottom: 1px solid #d9dfe7;
+
+  box-sizing: border-box;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+  .appointment-details-page {
+    padding: 25px 12px;
+  }
+
+  .details-container {
+    padding: 30px 15px 40px;
+
+    border-radius: 15px;
+  }
+
+  .details-container h1 {
+    font-size: 32px;
+  }
+
+  .search-box input {
+    width: 230px;
+
+    font-size: 17px;
+  }
+
+  .search-box button {
+    font-size: 17px;
+
+    padding: 0 18px;
+  }
+
+  .table-header,
+  .table-row {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,119 @@
+.service-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+/* NAVBAR */
+
+.service-navbar {
+  width: 100%;
+  height: 85px;
+  background: #274b74;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 60px;
+}
+
+.services-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: 200px;
+}
+
+/* SEARCH BAR */
+
+.service-navbar input {
+  width: 400px;
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 25px;
+
+  font-size: 16px;
+  outline: none;
+
+  margin: auto;
+}
+
+/* LIST - RIGHT SIDE */
+
+.list-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: 200px;
+  justify-content: flex-end;
+}
+
+.list-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.list-button {
+  background: white;
+  color: #274b74;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 6px 10px;
+
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+/* LIST OPEN होईल ती जागा */
+
+.service-list-box {
+  position: absolute;
+
+  top: 85px;
+  right: 60px;
+
+  width: 320px;
+
+  background: white;
+
+  padding: 20px 25px;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+  z-index: 1000;
+}
+
+
+/* MAIN LIST */
+
+.service-list-box ol {
+  margin: 0;
+  padding-left: 25px;
+}
+
+.service-list-box ol > li {
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* TYPES */
+
+.service-list-box ul {
+  margin-top: 5px;
+  padding-left: 25px;
+}
+
+.service-list-box ul li {
+  font-size: 16px;
+  font-weight: normal;
+
+  margin-bottom: 4px;
+}

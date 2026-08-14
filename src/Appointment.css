@@ -1,0 +1,200 @@
+/* Appointment Page */
+.appointment-page {
+  min-height: calc(100vh - 90px);
+  background: #f4f6fa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+
+/* Main Form Box */
+.appointment-box {
+  width: 100%;
+  max-width: 600px;
+
+  background: #ffffff;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Heading */
+.appointment-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appointment-heading h1 {
+  margin: 0 0 10px;
+
+  font-size: 36px;
+  color: #234f7d;
+
+  font-weight: 700;
+}
+
+.appointment-heading p {
+  margin: 0;
+
+  color: #777;
+  font-size: 16px;
+}
+
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #222;
+}
+
+.input-group input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #234f7d;
+}
+
+
+/* Selected Service */
+.selected-service {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  margin-bottom: 20px;
+  padding: 18px;
+
+  background: #f1f6fb;
+
+  border-left: 4px solid #234f7d;
+  border-radius: 7px;
+}
+
+.selected-service div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.selected-service span {
+  font-size: 14px;
+  color: #777;
+}
+
+.selected-service strong {
+  font-size: 17px;
+  color: #234f7d;
+}
+
+
+/* Payment Information */
+.payment-info {
+  margin-top: 10px;
+  margin-bottom: 25px;
+
+  padding: 18px;
+
+  background: #f1f6fb;
+
+  border-left: 4px solid #234f7d;
+
+  border-radius: 7px;
+}
+
+.payment-info h3 {
+  margin: 0 0 8px;
+
+  color: #234f7d;
+
+  font-size: 20px;
+}
+
+.payment-info p {
+  margin: 0 0 10px;
+
+  color: #555;
+
+  line-height: 1.5;
+}
+
+.payment-info strong {
+  font-size: 17px;
+  color: #222;
+}
+
+
+/* Book Button */
+.book-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #234f7d;
+  color: white;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.book-btn:hover {
+  background: #173957;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .appointment-page {
+    padding: 25px 15px;
+  }
+
+  .appointment-box {
+    padding: 25px 20px;
+  }
+
+  .appointment-heading h1 {
+    font-size: 28px;
+  }
+
+  .selected-service {
+    flex-direction: column;
+  }
+}

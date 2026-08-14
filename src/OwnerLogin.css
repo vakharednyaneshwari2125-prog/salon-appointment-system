@@ -1,0 +1,97 @@
+.owner-login-page {
+  min-height: 100vh;
+
+  background: #f4f6fa;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+}
+
+.owner-login-box {
+  width: 420px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box;
+}
+
+.owner-login-box h1 {
+  text-align: center;
+
+  color: #234f7d;
+
+  margin-bottom: 10px;
+}
+
+.owner-login-box p {
+  text-align: center;
+
+  color: #777;
+
+  margin-bottom: 30px;
+}
+
+.owner-input-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.owner-input-group label {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+}
+
+.owner-input-group input {
+  padding: 13px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.owner-input-group input:focus {
+  border-color: #234f7d;
+}
+
+.owner-login-box button {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #234f7d;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.owner-login-box button:hover {
+  background: #173957;
+}

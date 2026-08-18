@@ -22,7 +22,7 @@ function AppointmentDetails() {
     try {
       // Spring Boot API call
       const response = await fetch(
-        `http://localhost:8080/api/appointments/mobile/${enteredMobile}`
+        `https://salon-appointment-system-3-kg3i.onrender.com/api/appointments/mobile/${enteredMobile}`
       );
 
       if (!response.ok) {

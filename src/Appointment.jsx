@@ -61,7 +61,7 @@ function Appointment() {
     try {
       // Send appointment to Spring Boot
       const response = await fetch(
-        "http://localhost:8080/api/appointments",
+        "https://salon-appointment-system-3-kg3i.onrender.com/api/appointments",
         {
           method: "POST",
           headers: {

@@ -1,12 +1,20 @@
-FROM eclipse-temurin:21-jdk
+FROM gradle:8.10-jdk21 AS build
 
 WORKDIR /app
 
 COPY . .
 
 RUN chmod +x gradlew
-RUN ./gradlew build -x test
+RUN ./gradlew bootJar
 
-EXPOSE 10000
+RUN find build/libs -type f -name "*.jar" ! -name "*-plain.jar" -exec cp {} build/libs/app.jar \;
 
-CMD ["sh", "-c", "java -Dserver.port=${PORT:-10000} -jar build/libs/*.jar"]
+FROM eclipse-temurin:21-jre
+
+WORKDIR /app
+
+COPY --from=build /app/build/libs/app.jar app.jar
+
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "app.jar"]

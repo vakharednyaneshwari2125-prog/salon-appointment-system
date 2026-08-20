@@ -10,7 +10,12 @@ import com.example.salon.service.AppointmentService;
 
 @RestController
 @RequestMapping("/api/appointments")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://salon-appointment-system-teal.vercel.app"
+    }
+)
 public class AppointmentController {
 
     private final AppointmentService service;
@@ -19,7 +24,6 @@ public class AppointmentController {
         this.service = service;
     }
 
-    // Book appointment
     @PostMapping
     public ResponseEntity<?> bookAppointment(
             @RequestBody Appointment appointment) {
@@ -38,13 +42,11 @@ public class AppointmentController {
         }
     }
 
-    // Get all appointments
     @GetMapping
     public List<Appointment> getAllAppointments() {
         return service.getAllAppointments();
     }
 
-    // Get appointments by mobile
     @GetMapping("/mobile/{mobile}")
     public List<Appointment> getByMobile(
             @PathVariable("mobile") String mobile) {
@@ -52,15 +54,13 @@ public class AppointmentController {
         return service.getByMobile(mobile);
     }
 
-    // Get appointments by date
     @GetMapping("/date/{date}")
     public List<Appointment> getByDate(
             @PathVariable("date") String date) {
 
-        return service.getByDate(date);
+        return service.getByMobile(date);
     }
 
-    // Delete appointment
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteAppointment(
             @PathVariable("id") Long id) {
